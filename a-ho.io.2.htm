@@ -1,0 +1,239 @@
+<html lang="ko">
+<head>
+<meta charset="utf-8"/> <!--안해주면 한글 깨짐-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0" />
+<script language="javascript">
+function f_openUrlAll() {
+alert(1);
+var urlArr = new Array();
+var i = 0;
+urlArr[i++] ="https://www.a-ha.io/questions/434096771b6620ac85e369bd45c53532";
+
+//location.href = urlArr[0];
+//window.open(urlArr[0]);
+
+var param = "?recBy="
+var recByArr = new Array(); 
+var j = 0;
+recByArr[j++] = "P3NSVX";
+recByArr[j++] = "PY5BJE";
+recByArr[j++] = "FKLGEC";
+
+var openUrl = "";
+for(var k = 0; k < recByArr.length; k++) {
+	//alert(urlArr.length);
+	for(var l = 0; l < urlArr.length; l++) {
+		openUrl = urlArr[l] + param + recByArr[k];
+		//alert(openUrl );
+		window.open(openUrl );
+	}
+	alert(recByArr[k] + " End");
+}
+}
+
+function f_openUrl(recBy) {
+
+if(recBy.length != 6) {
+alert("입력값을 확인하세요(" + recBy + ")");
+return;
+}
+
+
+var urlArr = new Array();
+var i = 0;
+
+/* ha q */
+urlArr[i++] ="https://www.a-ha.io/questions/49b8267dacc49220bd88637c56bcd6c3";
+urlArr[i++] ="https://www.a-ha.io/questions/49ca5c8d3dc1ec41983ca7241faaba46";
+urlArr[i++] ="https://www.a-ha.io/questions/43cee7ef3832ec639626fd362ee66d12";
+urlArr[i++] ="https://www.a-ha.io/questions/437dca7a2ebeb071a617bb824d5ebee3";
+urlArr[i++] ="https://www.a-ha.io/questions/4e78f51820879714bfdc5705dedd665a";
+urlArr[i++] ="https://www.a-ha.io/questions/4533235249a87aa79fd86ed1460b7538";
+urlArr[i++] ="https://www.a-ha.io/questions/4e04795c73a8b1dc82d5050c1a9b66ff";
+urlArr[i++] ="https://www.a-ha.io/questions/431ef50641b2019d85ff314b7f920860";
+urlArr[i++] ="https://www.a-ha.io/questions/42ab52d9f3de81adb82510cdc82ecca5";
+urlArr[i++] ="https://www.a-ha.io/questions/4bd495bb196f04fea1566c844ff41fbf";
+ urlArr[i++] ="https://www.a-ha.io/questions/44224af67434833ca9321979e113d7de";
+urlArr[i++] ="https://www.a-ha.io/questions/456f2010e7deebf0bccfcbaa697be3a1";
+urlArr[i++] ="https://www.a-ha.io/questions/4addc169ebb7e73fa4638b66b5f0498e";
+urlArr[i++] ="https://www.a-ha.io/questions/4b4bd65438edd76db8b9d569ba454d61";
+
+
+/* pa q */
+urlArr[i++] ="https://www.a-ha.io/questions/434096771b6620ac85e369bd45c53532";
+urlArr[i++] ="https://www.a-ha.io/questions/4a4243c392956600aef7835e6ef283b6";
+urlArr[i++] ="https://www.a-ha.io/questions/44a4e94f8a6bf4eb9af146a19e1b55c2";
+urlArr[i++] ="https://www.a-ha.io/questions/44719f7af487a24cace6df94b4572e26";
+urlArr[i++] ="https://www.a-ha.io/questions/40f65187a91a7c95a78925a99f370d6e";
+urlArr[i++] ="https://www.a-ha.io/questions/4efbdef06a240f5cbd1ee48762b894a5";
+urlArr[i++] ="https://www.a-ha.io/questions/4286b21cb761f71d982141201014c42f";
+urlArr[i++] ="https://www.a-ha.io/questions/4c931db87feffababbb48b8f69c2be5b";
+urlArr[i++] ="https://www.a-ha.io/questions/43a60ef40e59578e8394875c173a0964";
+
+/* da q */
+urlArr[i++] ="https://www.a-ha.io/questions/4debe0b35bfb5059badce7de7e7f81a6";
+urlArr[i++] ="https://www.a-ha.io/questions/44ab04722edce768afc63c36263032dc";
+urlArr[i++] ="https://www.a-ha.io/questions/43a88b811bdef132b1769a04e3a0dd57";
+
+
+urlArr[i++] ="https://www.a-ha.io/questions/4eca5e42ed8c0cddb3b6a79add9af4d8";
+urlArr[i++] ="https://www.a-ha.io/questions/43b13f9ad8e040bfa44d0b12c87dde47";
+urlArr[i++] ="https://www.a-ha.io/questions/4e02e7913001b2b9a0f6f5491336a4fb";
+urlArr[i++] ="https://www.a-ha.io/questions/433f3012841b74c8b914b382658a0f9e";
+urlArr[i++] ="https://www.a-ha.io/questions/4e1ae1dbb1874676b160dce667437f15";
+urlArr[i++] ="https://www.a-ha.io/questions/4b0bf126700008d1bb8efb7e19a3bdad";
+urlArr[i++] ="https://www.a-ha.io/questions/4650410518077badaa65ff7824353edf";
+urlArr[i++] ="https://www.a-ha.io/questions/42834278b8adcd52b328ca02929ca420";
+urlArr[i++] ="https://www.a-ha.io/questions/4a69cede770ffe0695a81edc6ea0f288";
+urlArr[i++] ="https://www.a-ha.io/questions/40d358dd6f32a9b5aa1deac54f5d4f54";
+urlArr[i++] ="https://www.a-ha.io/questions/429d180380630199868ed64d173337a8";
+urlArr[i++] ="https://www.a-ha.io/questions/4fa77e6db3bb5d01990534f0620dc2c1";
+urlArr[i++] ="https://www.a-ha.io/questions/482372a6ea3b7789b3ceb4740e8752cf";
+urlArr[i++] ="https://www.a-ha.io/questions/4444c0da6ad5a54b89c101abbc119c36";
+urlArr[i++] ="https://www.a-ha.io/questions/48b92aaa24ae2941b7ed1bf8a0297d70";
+urlArr[i++] ="https://www.a-ha.io/questions/4b1899f7d85e563985df9165b3a6a33b";
+urlArr[i++] ="https://www.a-ha.io/questions/49af65f16276ca3892940883b214edb5";
+urlArr[i++] ="https://www.a-ha.io/questions/4077fb1ac5e44620b5dc8cd16f7b39b3";
+urlArr[i++] ="https://www.a-ha.io/questions/4350fee60e03c61684e22982ac49f010";
+urlArr[i++] ="https://www.a-ha.io/questions/48c13c664b951caabf113c4aec30cc08";
+urlArr[i++] ="https://www.a-ha.io/questions/4be95b552737bb7d8ebaac85bda28181";
+urlArr[i++] ="https://www.a-ha.io/questions/488b9a816e1837a2bf65c8be4a291ae2";
+urlArr[i++] ="https://www.a-ha.io/questions/47de8243fce7da7d814a1faa4894d7cc";
+urlArr[i++] ="https://www.a-ha.io/questions/4a2c19c6e3e774b6bedb15f65d52f698";
+urlArr[i++] ="https://www.a-ha.io/questions/43c65d20fa900c86bbe15d773a8d6bc8";
+urlArr[i++] ="https://www.a-ha.io/questions/47feffa7d20a78c9b176371cf1c80099";
+urlArr[i++] ="https://www.a-ha.io/questions/4c549b484499cceb8b34c42f03a10107";
+urlArr[i++] ="https://www.a-ha.io/questions/4b1b7bb56d61ed778df3abdbafd589e2";
+urlArr[i++] ="https://www.a-ha.io/questions/450322ded9b342f2816acc6c840fe9b5";
+urlArr[i++] ="https://www.a-ha.io/questions/468aceb12dec6ca09647be21d1b95145";
+urlArr[i++] ="https://www.a-ha.io/questions/43f7386d8ad76dfba82bc50e86292433";
+urlArr[i++] ="https://www.a-ha.io/questions/4594a0a45a3385e28cdd09377935f181";
+urlArr[i++] ="https://www.a-ha.io/questions/4f33c7635403a631b236d8adb295bc63";
+//urlArr[i++] ="";
+//urlArr[i++] ="";
+var urlArrLen = urlArr.length;
+
+text1.value = recBy;
+text2.value = urlArrLen;
+text3.value = getCurTime();
+
+//document.cookie = "lastExeTime=" + escape("111e");
+setCookie( "lastExeTime" , text3.value, 2 );
+
+
+
+//alert(getCookie( "lastExeTime"));
+//return;
+
+alert(recBy + "(" + urlArrLen + "개) Start....");
+
+var param = "?recBy=";
+
+var openUrl = "";
+	for(var l = 0; l < urlArrLen; l++) {
+		openUrl = urlArr[l] + param + recBy;
+		//alert(openUrl );
+		window.open(openUrl );
+	}
+}
+
+function getCurTime() {
+let today = new Date();   
+
+let yyyy = today.getFullYear();//연도
+let mm = today.getMonth()+1; //달 (+1)해야됨
+let dd = today.getDate(); //날짜
+let day = today.getDay(); //요일
+
+
+let hours = today.getHours(); // 시
+let minutes = today.getMinutes();  // 분
+let seconds = today.getSeconds();  // 초
+let milliseconds = today.getMilliseconds(); // 밀리초
+
+return (mm+"월"+dd+"일 "+ hours + ':' + minutes + ':  ' + seconds + ':' + milliseconds);
+}
+
+function start() {
+  var ck = document.cookie;
+  alert(ck);
+}
+
+// 쿠키 생성
+
+function setCookie2( name, value, expiredays ) {  // 쿠키저장
+
+var todayDate = new Date();  //date객체 생성 후 변수에 저장
+
+todayDate.setDate( todayDate.getDate() + expiredays ); 
+
+    // 시간지정(현재시간 + 지정시간)
+
+document.cookie = name + "=" + value + "; path=/; expires=" + todayDate.toUTCString() + ";"
+
+//
+
+} 
+
+ function setCookie(cookie_name, value, days) {
+
+var exdate = new Date();
+
+exdate.setDate(exdate.getDate() + days);
+
+// 설정 일수만큼 현재시간에 만료값으로 지정
+var cookie_value = escape(value) + ((days == null) ? '' : '; expires=' + exdate.toUTCString());
+
+cookie_value+=";domain=content://com.simplemobiletools.filemanager.pro.provider";
+
+alert(cookie_value);
+
+document.cookie = cookie_name + '=' + cookie_value;
+
+}
+
+
+function getCookie(cookie_name) {
+
+var x, y;
+
+var val = document.cookie.split(';');
+
+
+for (var i = 0; i < val.length; i++) {
+
+x = val[i].substr(0, val[i].indexOf('='));
+
+y = val[i].substr(val[i].indexOf('=') + 1);
+
+x = x.replace(/^\s+|\s+$/g, ''); // 앞과 뒤의 공백 제거하기
+
+if (x == cookie_name) {
+
+return unescape(y); // unescape로 디코딩 후 값 리턴
+
+}
+
+}
+
+}
+
+
+
+
+</script>
+</head>
+<body onload="start()">
+<br><br>
+<input type="button" value="P3NSVX" onClick="f_openUrl('P3NSVX')">　
+<input type="button" value="PY5BJE" onClick="f_openUrl('PY5BJE')">　
+<input type="button" value="FKLGEC" onClick="f_openUrl('FKLGEC')">　
+<input type="button" value="입력값으로" onClick="f_openUrl(text1.value)">
+<br><br>
+rec <input type="text" id="text1" size="7">　<br>
+cnt <input type="text" id="text2" size="3">　<br>
+time <input type="text" id="text3" size="20">　<br>
+
+
+</body>
+</html>
