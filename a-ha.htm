@@ -119,6 +119,7 @@ text3.value = getCurTime();
 
 //document.cookie = "lastExeTime=" + escape("111e");
 setCookie( "lastExeTime" , text3.value, 2 );
+alert(document.cookie );
 
 
 
@@ -175,7 +176,8 @@ document.cookie = name + "=" + value + "; path=/; expires=" + todayDate.toUTCStr
 
 } 
 
- function setCookie(cookie_name, value, days) {
+
+function setCookie(cookie_name, value, days) {
 
 var exdate = new Date();
 
@@ -185,8 +187,6 @@ exdate.setDate(exdate.getDate() + days);
 var cookie_value = escape(value) + ((days == null) ? '' : '; expires=' + exdate.toUTCString());
 
 cookie_value+=";domain=content://com.simplemobiletools.filemanager.pro.provider";
-
-alert(cookie_value);
 
 document.cookie = cookie_name + '=' + cookie_value;
 
